@@ -1,0 +1,8 @@
+{
+  "size": 12,
+  "order": 20,
+  "icon": "primogemcraft:slot/pgccurio",
+  "validators": [
+    "primogemcraft:curio"
+  ]
+}

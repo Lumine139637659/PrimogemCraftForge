@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.03
+    }
+  ],
+  "table": "primogemcraft:injection/fishing"
+}

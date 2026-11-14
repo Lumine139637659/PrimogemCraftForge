@@ -1,0 +1,899 @@
+{
+  "parent": "primogemcraft:block/a_cake_for_you_model",
+  "render_type": "solid",
+  "elements": [
+    {
+      "name": "ivory_trim_1",
+      "from": [
+        15.2,
+        8,
+        9
+      ],
+      "to": [
+        15.4,
+        8.1,
+        12.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            3.25,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            3.25,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.875
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.875
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_2",
+      "from": [
+        15,
+        6,
+        12
+      ],
+      "to": [
+        15.4,
+        6.1,
+        12.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            0.25,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            0.25,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_3",
+      "from": [
+        15.2,
+        6,
+        12
+      ],
+      "to": [
+        15.4,
+        8,
+        12.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_4",
+      "from": [
+        15,
+        6,
+        1
+      ],
+      "to": [
+        15.2,
+        6.1,
+        12
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            11.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            11.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            14.75
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            14.75
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_5",
+      "from": [
+        15,
+        4,
+        1
+      ],
+      "to": [
+        15.2,
+        6,
+        1.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            11.75
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_6",
+      "from": [
+        15,
+        4,
+        1
+      ],
+      "to": [
+        15.2,
+        4.1,
+        7
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            6.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            6.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            14.75
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            14.75
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_7",
+      "from": [
+        15,
+        4,
+        7
+      ],
+      "to": [
+        15.2,
+        5,
+        7.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            10.75
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            10.75
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            10.75
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            10.75
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_8",
+      "from": [
+        15.2,
+        5,
+        3
+      ],
+      "to": [
+        15.4,
+        5.1,
+        7
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            4.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            4.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            13.75
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            13.75
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_9",
+      "from": [
+        15,
+        5,
+        7
+      ],
+      "to": [
+        15.4,
+        5.1,
+        7.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            0.25,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            0.25,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            8.5,
+            0.5,
+            9
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_10",
+      "from": [
+        15.2,
+        2.4,
+        3
+      ],
+      "to": [
+        15.4,
+        5,
+        3.1
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.375
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.375
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.375
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.375
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        }
+      }
+    },
+    {
+      "name": "ivory_trim_11",
+      "from": [
+        15.2,
+        2.4,
+        0
+      ],
+      "to": [
+        15.4,
+        2.5,
+        3
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "east": {
+          "uv": [
+            0.125,
+            8.5,
+            3.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            8.5,
+            0.375,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "west": {
+          "uv": [
+            0.125,
+            8.5,
+            3.125,
+            9
+          ],
+          "texture": "#detail"
+        },
+        "up": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.75
+          ],
+          "texture": "#detail"
+        },
+        "down": {
+          "uv": [
+            0.125,
+            9.75,
+            0.625,
+            12.75
+          ],
+          "texture": "#detail"
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "a_cake_for_you",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "color": 0,
+      "children": [
+        {
+          "name": "side_ornaments",
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "color": 2,
+          "children": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    }
+  ]
+}
