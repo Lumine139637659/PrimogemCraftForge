@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:nagadus_emerald_ore"
   },
-  "result": {
-    "item": "primogemcraft:nagadus_emerald_sliver",
-    "count": 4
-  }
+  "result": "primogemcraft:nagadus_emerald_sliver",
+  "count": 4
 }

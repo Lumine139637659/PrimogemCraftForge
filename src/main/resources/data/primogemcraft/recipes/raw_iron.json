@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:white_iron_ore"
   },
-  "result": {
-    "item": "minecraft:raw_iron",
-    "count": 2
-  }
+  "result": "minecraft:raw_iron",
+  "count": 2
 }

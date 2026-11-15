@@ -30,8 +30,8 @@ public final class AttachmentType<T> {
         return new Builder<>(defaultValue);
     }
 
-    /** 由注册表填入名称。 */
-    AttachmentType<T> named(String name) {
+    /** 由注册表或本地持有者填入名称。 */
+    public AttachmentType<T> named(String name) {
         return new AttachmentType<>(name, defaultValue, codec, copyOnDeath);
     }
 

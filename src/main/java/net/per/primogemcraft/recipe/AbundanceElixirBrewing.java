@@ -30,7 +30,7 @@ public final class AbundanceElixirBrewing implements IBrewingRecipe {
     private static final List<Item> CONTAINERS = List.of(Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION);
 
     @SubscribeEvent
-    private static void onCommonSetup(FMLCommonSetupEvent event) {
+    public static void onCommonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> BrewingRecipeRegistry.addRecipe(new AbundanceElixirBrewing()));
     }
 

@@ -87,7 +87,7 @@ public class PGCEffects {
                 .modifier(Attributes.ATTACK_SPEED, PRESCRIPTION_PENALTY, AttributeModifier.Operation.MULTIPLY_BASE)
                 .modifier(Attributes.FLYING_SPEED, PRESCRIPTION_PENALTY, AttributeModifier.Operation.MULTIPLY_BASE)
                 .modifier(Attributes.MOVEMENT_SPEED, PRESCRIPTION_PENALTY, AttributeModifier.Operation.MULTIPLY_BASE)
-                .modifier(net.minecraftforge.common.ForgeMod.SWIM_SPEED.get(), PRESCRIPTION_PENALTY, AttributeModifier.Operation.MULTIPLY_BASE);
+                .modifier(net.minecraftforge.common.ForgeMod.SWIM_SPEED, PRESCRIPTION_PENALTY, AttributeModifier.Operation.MULTIPLY_BASE);
     }
 
     private static void strike(ServerPlayer player) {

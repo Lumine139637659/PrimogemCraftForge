@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:vajrada_amethyst_gemstone"
   },
-  "result": {
-    "item": "primogemcraft:vajrada_amethyst_sliver",
-    "count": 64
-  }
+  "result": "primogemcraft:vajrada_amethyst_sliver",
+  "count": 64
 }

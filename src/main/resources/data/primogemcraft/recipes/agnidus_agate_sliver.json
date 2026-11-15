@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:agnidus_agate_gemstone"
   },
-  "result": {
-    "item": "primogemcraft:agnidus_agate_sliver",
-    "count": 64
-  }
+  "result": "primogemcraft:agnidus_agate_sliver",
+  "count": 64
 }

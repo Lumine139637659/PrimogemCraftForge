@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:dendro_core_block"
   },
-  "result": {
-    "item": "primogemcraft:dendro_core",
-    "count": 9
-  }
+  "result": "primogemcraft:dendro_core",
+  "count": 9
 }

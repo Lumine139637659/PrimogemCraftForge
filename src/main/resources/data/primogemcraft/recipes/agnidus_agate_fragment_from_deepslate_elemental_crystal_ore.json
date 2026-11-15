@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:deepslate_elemental_crystal_ore"
   },
-  "result": {
-    "item": "primogemcraft:agnidus_agate_fragment",
-    "count": 1
-  }
+  "result": "primogemcraft:agnidus_agate_fragment",
+  "count": 1
 }

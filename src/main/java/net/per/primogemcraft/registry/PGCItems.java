@@ -55,6 +55,19 @@ public class PGCItems {
     private static final int FROSTED_SLIME_JUMP_TICKS = 100;
     private static final int PRAISE_OF_HIGH_MORALS_TICKS = 1200;
 
+    /** comparator_output and length_in_seconds from the original data/primogemcraft/jukebox_song/*.json. */
+    private static final java.util.Map<String, int[]> DISC_DATA = java.util.Map.ofEntries(
+            java.util.Map.entry("a_day_of_hope", new int[]{10, 250}),
+            java.util.Map.entry("ballad_of_many_waters", new int[]{4, 250}),
+            java.util.Map.entry("chasing_starlight_with_you", new int[]{15, 400}),
+            java.util.Map.entry("hakushins_lullaby", new int[]{10, 250}),
+            java.util.Map.entry("netherite_ingot", new int[]{15, 60}),
+            java.util.Map.entry("salty_moon", new int[]{10, 250}),
+            java.util.Map.entry("space_walk", new int[]{10, 250}),
+            java.util.Map.entry("take_the_journey", new int[]{5, 150}),
+            java.util.Map.entry("the_village_no_longer_young", new int[]{10, 250}),
+            java.util.Map.entry("village_surrounded_by_green", new int[]{10, 250}));
+
     public static final DeferredItem<PrimogemItem> PRIMOGEM = REGISTRY.registerItem("primogem",
             properties -> new PrimogemItem(properties.fireResistant().rarity(Rarity.RARE).food(food(9, 0.4F))));
     public static final DeferredItem<MoraItem> MORA = REGISTRY.registerItem("mora", MoraItem::new);
@@ -712,19 +725,6 @@ public class PGCItems {
     private static String discSound(String name) {
         return name.equals("netherite_ingot") ? "scam" : name;
     }
-
-    /** comparator_output and length_in_seconds from the original data/primogemcraft/jukebox_song/*.json. */
-    private static final java.util.Map<String, int[]> DISC_DATA = java.util.Map.ofEntries(
-            java.util.Map.entry("a_day_of_hope", new int[]{10, 250}),
-            java.util.Map.entry("ballad_of_many_waters", new int[]{4, 250}),
-            java.util.Map.entry("chasing_starlight_with_you", new int[]{15, 400}),
-            java.util.Map.entry("hakushins_lullaby", new int[]{10, 250}),
-            java.util.Map.entry("netherite_ingot", new int[]{15, 60}),
-            java.util.Map.entry("salty_moon", new int[]{10, 250}),
-            java.util.Map.entry("space_walk", new int[]{10, 250}),
-            java.util.Map.entry("take_the_journey", new int[]{5, 150}),
-            java.util.Map.entry("the_village_no_longer_young", new int[]{10, 250}),
-            java.util.Map.entry("village_surrounded_by_green", new int[]{10, 250}));
 
     private static TagKey<Block> blockTag(String name) {
         return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(MOD_ID, name));

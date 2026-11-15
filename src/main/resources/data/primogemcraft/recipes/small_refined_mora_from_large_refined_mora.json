@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:large_refined_mora"
   },
-  "result": {
-    "item": "primogemcraft:small_refined_mora",
-    "count": 4
-  }
+  "result": "primogemcraft:small_refined_mora",
+  "count": 4
 }

@@ -15,7 +15,7 @@ import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
 @Mod.EventBusSubscriber(modid = MOD_ID)
 public class PGCCommands {
     @SubscribeEvent
-    private static void on(RegisterCommandsEvent event) {
+    public static void on(RegisterCommandsEvent event) {
         var dispatcher = event.getDispatcher();
         Wish.register(dispatcher);
         Curio.register(dispatcher);

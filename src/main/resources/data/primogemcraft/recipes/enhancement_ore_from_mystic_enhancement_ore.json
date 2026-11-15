@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:mystic_enhancement_ore"
   },
-  "result": {
-    "item": "primogemcraft:enhancement_ore",
-    "count": 36
-  }
+  "result": "primogemcraft:enhancement_ore",
+  "count": 36
 }

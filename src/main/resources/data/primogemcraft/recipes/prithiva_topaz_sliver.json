@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:prithiva_topaz_gemstone"
   },
-  "result": {
-    "item": "primogemcraft:prithiva_topaz_sliver",
-    "count": 64
-  }
+  "result": "primogemcraft:prithiva_topaz_sliver",
+  "count": 64
 }

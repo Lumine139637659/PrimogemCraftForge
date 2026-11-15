@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:dendro_core_block"
   },
-  "result": {
-    "item": "primogemcraft:vajrada_amethyst_sliver",
-    "count": 1
-  }
+  "result": "primogemcraft:vajrada_amethyst_sliver",
+  "count": 1
 }

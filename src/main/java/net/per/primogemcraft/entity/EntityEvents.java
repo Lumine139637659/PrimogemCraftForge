@@ -12,7 +12,7 @@ import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
 @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class EntityEvents {
     @SubscribeEvent
-    private static void registerEntityAttributes(EntityAttributeCreationEvent event) {
+    public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
         event.put(PGCEntities.ABUNDANCE_BLIGHT_ZOMBIE.get(), AbundanceBlightZombieEntity.createAttributes().build());
         event.put(PGCEntities.LIVING_ITEM.get(), LivingItemEntity.createAttributes().build());
     }

@@ -2,9 +2,10 @@ package net.per.primogemcraft;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModContainer;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.per.primogemcraft.collab.genshincraft.GenshinCraftIntegration;
 import net.per.primogemcraft.collab.tacz.TaczIntegration;
 import net.per.primogemcraft.collab.teyvatdelight.TeyvatDelightIntegration;
@@ -20,7 +21,8 @@ public class PrimogemCraft {
     public static final String MOD_ID = "primogemcraft";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public PrimogemCraft(IEventBus modBus, ModContainer container) {
+    public PrimogemCraft() {
+        IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         PGCBlocks.REGISTRY.register(modBus);
         PGCBlockEntities.REGISTRY.register(modBus);
         modBus.addListener(PGCBlockEntities::registerCapabilities);
@@ -45,7 +47,7 @@ public class PrimogemCraft {
         // Elixir Dan 无任何 1.20.1 版本，其联动（collab/elixir）已移除。
         TaczIntegration.register();
         TeyvatDelightIntegration.register(modBus);
-        net.minecraftforge.fml.ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, PGCConfig.SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, PGCConfig.SPEC);
         PGCNetwork.registerPayloads(new RegisterPayloadHandlersEvent());
     }
 }

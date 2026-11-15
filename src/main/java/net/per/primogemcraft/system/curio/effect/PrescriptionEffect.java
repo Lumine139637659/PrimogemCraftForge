@@ -23,8 +23,10 @@ public class PrescriptionEffect extends CurioEffect {
     public PrescriptionEffect(Prescription prescription) {
         super(MobEffectCategory.HARMFUL, COLOR);
         this.prescription = prescription;
-        for (var modifier : prescription.modifiers())
-            addAttributeModifier(modifier.attribute(), net.per.primogemcraft.compat.attribute.AttributesCompat.uuid(modifierId(modifier.attribute())).toString(), modifier.amount(), modifier.operation());
+        for (var modifier : prescription.modifiers()) {
+            var attribute = modifier.attribute().get();
+            addAttributeModifier(attribute, net.per.primogemcraft.compat.attribute.AttributesCompat.uuid(modifierId(attribute)).toString(), modifier.amount(), modifier.operation());
+        }
     }
 
     public Prescription prescription() {

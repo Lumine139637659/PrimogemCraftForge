@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:geomarrow_crystal_cluster"
   },
-  "result": {
-    "item": "primogemcraft:geomarrow",
-    "count": 1
-  }
+  "result": "primogemcraft:geomarrow",
+  "count": 1
 }

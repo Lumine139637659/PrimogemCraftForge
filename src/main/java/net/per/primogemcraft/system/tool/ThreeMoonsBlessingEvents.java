@@ -21,7 +21,7 @@ public final class ThreeMoonsBlessingEvents {
     }
 
     @SubscribeEvent
-    private static void onLivingFall(LivingFallEvent event) {
+    public static void onLivingFall(LivingFallEvent event) {
         if (!(event.getEntity() instanceof net.minecraft.world.entity.player.Player player)) return;
         if (!player.getMainHandItem().is(PGCItems.THREE_MOONS_BLESSING.get())
                 && !player.getOffhandItem().is(PGCItems.THREE_MOONS_BLESSING.get())) return;

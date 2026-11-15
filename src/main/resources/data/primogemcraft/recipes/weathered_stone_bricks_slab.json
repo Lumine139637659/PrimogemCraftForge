@@ -3,8 +3,6 @@
   "ingredient": {
     "item": "primogemcraft:weathered_stone_bricks"
   },
-  "result": {
-    "item": "primogemcraft:weathered_stone_bricks_slab",
-    "count": 1
-  }
+  "result": "primogemcraft:weathered_stone_bricks_slab",
+  "count": 1
 }

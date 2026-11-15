@@ -21,7 +21,7 @@ public class PGCBlockEntities {
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {
         // 1.20.1 exposes block-entity capabilities through ICapabilityProvider on the
         // block entity itself (see StellarConverterBlockEntity#getCapability).
-        event.register(net.minecraftforge.items.IItemHandler.class);
+        // IItemHandler is already registered by Forge; registering it again throws.
     }
 
     public static final String UNIDENTIFIED_DOLL_NAME = "unidentified_doll";

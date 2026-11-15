@@ -15,7 +15,7 @@ import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
 @Mod.EventBusSubscriber(modid = MOD_ID)
 public final class PrimogemScholarTrades {
     @SubscribeEvent
-    private static void registerTrades(VillagerTradesEvent event) {
+    public static void registerTrades(VillagerTradesEvent event) {
         if (event.getType() != PGCVillagerProfessions.PRIMOGEM_SCHOLAR.get()) return;
         var trades = event.getTrades();
         trades.get(1).add(new BasicItemListing(new ItemStack(PGCItems.PRIMOGEM.get(), 5), new ItemStack(Items.EMERALD), 20, 5, 0.03f));
