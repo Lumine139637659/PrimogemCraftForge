@@ -96,7 +96,7 @@ public class StellarConverterBlockEntity extends net.minecraft.world.level.block
         tag.putBoolean(SECOND_DISABLED_TAG, secondDisabled);
     }
 
-    public void writeClientSideData(AbstractContainerMenu menu, net.minecraft.network.FriendlyByteBuf buffer) {
+    public void writeOpeningData(net.minecraft.network.FriendlyByteBuf buffer) {
         buffer.writeBlockPos(worldPosition);
     }
 

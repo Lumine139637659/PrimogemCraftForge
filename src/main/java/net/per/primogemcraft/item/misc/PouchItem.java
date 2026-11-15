@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.network.NetworkHooks;
 import net.per.primogemcraft.item.tool.DescribedItem;
 import net.per.primogemcraft.system.menu.ContainerWindowMenu;
 import net.per.primogemcraft.system.menu.ContainerWindowSound;
@@ -39,7 +40,8 @@ public class PouchItem extends DescribedItem {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         var stack = player.getItemInHand(hand);
         if (player instanceof ServerPlayer serverPlayer) {
-            serverPlayer.openMenu(new PouchMenuProvider(stack.getHoverName(), new PouchContainer(stack, capacity), hand, stack, capacity));
+            var provider = new PouchMenuProvider(stack.getHoverName(), new PouchContainer(stack, capacity), hand, stack, capacity);
+            NetworkHooks.openScreen(serverPlayer, provider, buffer -> provider.writeOpeningData(buffer));
             ContainerWindowSound.POUCH_OPEN.play(level, player.getX(), player.getY(), player.getZ(), player.getRandom());
         }
         player.swing(hand, true);
@@ -59,7 +61,7 @@ public class PouchItem extends DescribedItem {
                     ContainerWindowSound.POUCH_CLOSE);
         }
 
-        public void writeClientSideData(AbstractContainerMenu menu, net.minecraft.network.FriendlyByteBuf buffer) {
+        public void writeOpeningData(net.minecraft.network.FriendlyByteBuf buffer) {
             buffer.writeByte(hand == InteractionHand.MAIN_HAND ? ContainerWindowMenu.SOURCE_MAIN_HAND : ContainerWindowMenu.SOURCE_OFF_HAND);
             buffer.writeVarInt(capacity);
         }

@@ -1,10 +1,7 @@
 package net.per.primogemcraft.system.loot;
 
-import com.mojang.serialization.MapCodec;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 import net.per.primogemcraft.registry.PGCLootConditions;
@@ -29,7 +26,9 @@ public class IsChestCondition implements LootItemCondition {
 
     @Override
     public boolean test(LootContext context) {
-        var table = java.util.Optional.ofNullable(context.getResolver().getLootTable(context.getQueriedLootTableId()));
-        return table.filter(t -> t.getParamSet() == LootContextParamSets.CHEST).isPresent();
+        var id = context.getQueriedLootTableId();
+        if (!"minecraft".equals(id.getNamespace())) return false;
+        var path = id.getPath();
+        return path.startsWith("chests/") || path.equals("gameplay/fishing/treasure");
     }
 }

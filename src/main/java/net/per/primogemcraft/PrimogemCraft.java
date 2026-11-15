@@ -8,7 +8,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.per.primogemcraft.collab.genshincraft.GenshinCraftIntegration;
 import net.per.primogemcraft.collab.tacz.TaczIntegration;
 import net.per.primogemcraft.collab.teyvatdelight.TeyvatDelightIntegration;
+import net.per.primogemcraft.compat.network.RegisterPayloadHandlersEvent;
 import net.per.primogemcraft.config.PGCConfig;
+import net.per.primogemcraft.network.PGCNetwork;
 import net.per.primogemcraft.system.zipline.ZiplineAssembly;
 import net.per.primogemcraft.registry.*;
 import org.slf4j.Logger;
@@ -44,5 +46,6 @@ public class PrimogemCraft {
         TaczIntegration.register();
         TeyvatDelightIntegration.register(modBus);
         net.minecraftforge.fml.ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, PGCConfig.SPEC);
+        PGCNetwork.registerPayloads(new RegisterPayloadHandlersEvent());
     }
 }

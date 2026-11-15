@@ -20,12 +20,18 @@ public final class PGCKeyMappings {
     }
 
     @SubscribeEvent
-    public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-        event.register(ANEMO_EFFECT);
-    }
-
-    @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event) {
         while (ANEMO_EFFECT.consumeClick()) PayloadRegistrar.sendToServer(new AnemoEffectPayload());
+    }
+
+    @Mod.EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static final class Registration {
+        private Registration() {
+        }
+
+        @SubscribeEvent
+        public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
+            event.register(ANEMO_EFFECT);
+        }
     }
 }

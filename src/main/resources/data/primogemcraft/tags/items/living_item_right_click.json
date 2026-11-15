@@ -20,7 +20,10 @@
     "minecraft:water_bucket",
     "minecraft:lava_bucket",
     "minecraft:ender_pearl",
-    "minecraft:wind_charge",
+    {
+      "id": "minecraft:wind_charge",
+      "required": false
+    },
     "minecraft:powder_snow_bucket",
     "minecraft:flint_and_steel",
     "minecraft:fishing_rod",

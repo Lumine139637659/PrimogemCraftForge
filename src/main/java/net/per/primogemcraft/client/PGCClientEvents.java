@@ -39,7 +39,7 @@ import java.util.List;
 
 import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
 
-@Mod.EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PGCClientEvents {
     private static final String CLOTH_CONFIG_ID = "cloth_config";
     private static final ResourceLocation WEAPON_RECOVERY_PROPERTY = ResourceLocation.fromNamespaceAndPath(MOD_ID, "weapon_recovery");

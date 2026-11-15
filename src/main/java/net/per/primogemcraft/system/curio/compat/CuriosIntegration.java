@@ -16,7 +16,7 @@ import java.util.Set;
 
 import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
 
-@Mod.EventBusSubscriber(modid = MOD_ID)
+@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class CuriosIntegration {
     private static final String CURIO_MOD_ID = "curios";
 

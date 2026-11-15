@@ -1,8 +1,6 @@
 package net.per.primogemcraft.network;
 
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import net.per.primogemcraft.compat.network.RegisterPayloadHandlersEvent;
 import net.per.primogemcraft.client.ChoiceParticles;
 import net.per.primogemcraft.client.ItemActivationFx;
@@ -14,13 +12,9 @@ import net.per.primogemcraft.item.misc.LuckySpecialTicketItem;
 import net.per.primogemcraft.system.choice.ChoiceRegistry;
 import net.per.primogemcraft.system.element.AnemoEffectMode;
 
-import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
-
-@Mod.EventBusSubscriber(modid = MOD_ID)
 public final class PGCNetwork {
     private static final String PROTOCOL_VERSION = "1.1";
 
-    @SubscribeEvent
     public static void registerPayloads(RegisterPayloadHandlersEvent event) {
         var registrar = event.registrar(PROTOCOL_VERSION);
         registrar.playToServer(ZiplineControlPayload.TYPE, ZiplineControlPayload.STREAM_CODEC, (payload, context) -> {

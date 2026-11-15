@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraftforge.network.NetworkHooks;
 import net.per.primogemcraft.block.entity.StellarConverterBlockEntity;
 import net.per.primogemcraft.registry.PGCBlockEntities;
 import net.minecraft.world.InteractionHand;
@@ -33,7 +34,7 @@ public class StellarConverterBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (level.isClientSide()) return InteractionResult.SUCCESS;
         if (player instanceof ServerPlayer serverPlayer && level.getBlockEntity(pos) instanceof StellarConverterBlockEntity converter)
-            serverPlayer.openMenu(converter);
+            NetworkHooks.openScreen(serverPlayer, converter, buffer -> converter.writeOpeningData(buffer));
         return InteractionResult.SUCCESS;
     }
 

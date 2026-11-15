@@ -70,7 +70,7 @@ public class ContainerWindowBlockEntity extends RandomizableContainerBlockEntity
                 ContainerLevelAccess.create(level, worldPosition), ContainerWindowSound.TRASH_CAN_CLOSE);
     }
 
-    public void writeClientSideData(AbstractContainerMenu menu, net.minecraft.network.FriendlyByteBuf buffer) {
+    public void writeOpeningData(net.minecraft.network.FriendlyByteBuf buffer) {
         buffer.writeByte(ContainerWindowMenu.SOURCE_BLOCK);
         buffer.writeVarInt(items.size());
         buffer.writeBlockPos(worldPosition);

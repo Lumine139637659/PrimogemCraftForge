@@ -58,36 +58,27 @@ public class ContainerWindowScreen extends AbstractContainerScreen<ContainerWind
         }
         renderGrid(graphics);
         pose.popPose();
-    }
 
-    /** 1.20.1 keeps renderSlot private, so the grid cells are drawn from renderBg. */
-    private void renderContainerSlot(GuiGraphics graphics, Slot slot) {
-        if (slot.container != menu.container()) {
-            renderVanillaSlot(graphics, slot);
-            return;
-        }
-        var y = cellY(slot.index);
-        if (y + SLOT_ITEM <= ContainerWindowLayout.gridTop()
-                || y >= ContainerWindowLayout.gridTop() + ContainerWindowLayout.gridHeight(menu.visibleRows())) return;
+        var firstRow = Mth.floor(scroll.shown());
+        var top = cellY(firstRow * ContainerWindowLayout.COLUMNS);
         clipGrid(graphics);
-        graphics.pose().pushPose();
-        graphics.pose().translate(ContainerWindowLayout.columnX(slot.index % ContainerWindowLayout.COLUMNS) - slot.x,
-                y - slot.y, 0.0F);
-        renderVanillaSlot(graphics, slot);
-        graphics.pose().popPose();
+        for (var row = 0; row <= menu.visibleRows(); row++) {
+            var y = top + row * ContainerWindowLayout.SLOT;
+            for (var column = 0; column < ContainerWindowLayout.COLUMNS; column++) {
+                var index = (firstRow + row) * ContainerWindowLayout.COLUMNS + column;
+                if (index >= menu.containerSlots()) break;
+                var slot = menu.getSlot(index);
+                var x = ContainerWindowLayout.columnX(column);
+                var stack = slot.getItem();
+                if (!stack.isEmpty()) {
+                    graphics.renderItem(stack, leftPos + x, topPos + y);
+                    graphics.renderItemDecorations(font, stack, leftPos + x, topPos + y);
+                }
+                if (index == hoveredCell && menu.getCarried().isEmpty())
+                    renderSlotHighlight(graphics, leftPos + x, topPos + y, 0);
+            }
+        }
         graphics.disableScissor();
-    }
-
-    /** Mirrors vanilla slot rendering, which is private in 1.20.1. */
-    private void renderVanillaSlot(GuiGraphics graphics, Slot slot) {
-        var stack = slot.getItem();
-        graphics.renderItem(stack, slot.x, slot.y);
-        graphics.renderItemDecorations(font, stack, slot.x, slot.y);
-    }
-
-    private void renderSlotHighlightFor(GuiGraphics graphics, Slot slot) {
-        if (slot.container != menu.container())
-            AbstractContainerScreen.renderSlotHighlight(graphics, slot.x, slot.y, 0);
     }
 
     @Override

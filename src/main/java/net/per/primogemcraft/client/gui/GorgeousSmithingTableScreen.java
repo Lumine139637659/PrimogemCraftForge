@@ -196,6 +196,9 @@ public class GorgeousSmithingTableScreen extends AbstractContainerScreen<Gorgeou
         renderLevel(graphics);
         renderButtons(graphics);
         renderHints(graphics);
+
+        for (var index = 0; index < GorgeousSmithingTableMenu.FIRST_INVENTORY_SLOT; index++)
+            renderContainerSlot(graphics, menu.getSlot(index));
     }
 
     /** 1.20.1 keeps renderSlot private; called from renderBg instead. */

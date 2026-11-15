@@ -9,7 +9,7 @@ import net.per.primogemcraft.registry.PGCEntities;
 
 import static net.per.primogemcraft.PrimogemCraft.MOD_ID;
 
-@Mod.EventBusSubscriber(modid = MOD_ID)
+@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class EntityEvents {
     @SubscribeEvent
     private static void registerEntityAttributes(EntityAttributeCreationEvent event) {

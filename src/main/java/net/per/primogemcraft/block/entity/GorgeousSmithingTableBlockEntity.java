@@ -50,10 +50,9 @@ public class GorgeousSmithingTableBlockEntity extends net.minecraft.world.level.
         return new GorgeousSmithingTableMenu(id, inventory, this, access, LinkedContainers.scan(level, worldPosition));
     }
 
-    public void writeClientSideData(AbstractContainerMenu menu, net.minecraft.network.FriendlyByteBuf buffer) {
+    public void writeOpeningData(net.minecraft.network.FriendlyByteBuf buffer) {
         buffer.writeBlockPos(worldPosition);
-        if (menu instanceof GorgeousSmithingTableMenu table) table.writeLinks(buffer);
-        else LinkedContainers.write(buffer, List.of());
+        LinkedContainers.write(buffer, LinkedContainers.scan(level, worldPosition));
     }
 
     @Override
